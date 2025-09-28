@@ -12,10 +12,9 @@
     <script>
       (function() {
         const storedTheme = localStorage.getItem('xdcyw-theme');
-        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const theme = storedTheme || (prefersDark ? 'dark' : 'dark');
-        if (theme === 'light') {
-          document.documentElement.setAttribute('data-theme', 'light');
+        const theme = storedTheme || 'light';
+        if (theme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
         } else {
           document.documentElement.removeAttribute('data-theme');
         }

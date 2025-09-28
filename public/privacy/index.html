@@ -1,3 +1,113 @@
-<!doctype html><html lang=ja><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>プライバシーポリシー | xdcyw.net</title>
-<meta name=description content="xdcyw.net におけるデータの取り扱いについて"><script>(function(){const e=localStorage.getItem("xdcyw-theme"),t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,n=e||(t?"dark":"dark");n==="light"?document.documentElement.setAttribute("data-theme","light"):document.documentElement.removeAttribute("data-theme")})()</script><link rel=icon href=favicon.ico sizes=any><link rel=icon href=favicon.svg type=image/svg+xml><link rel=apple-touch-icon href=apple-touch-icon.png><link rel=stylesheet href=/css/style.css><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto+Mono&family=VT323&display=swap" rel=stylesheet></head><body><div class=crt-container><header class=site-header><div class="site-header__container container"><p class=site-logo><a href=/>xdcyw.net</a></p><nav class=site-nav aria-label=primary><ul class=site-nav__list><li class=site-nav__item><a class=site-nav__link href=/about/>profile</a></li><li class=site-nav__item><a class=site-nav__link href=/posts/>posts</a></li><li class=site-nav__item><a class=site-nav__link href=/privacy/>privacy</a></li></ul></nav><button id=theme-toggle class=theme-toggle type=button aria-label=テーマ切替></button></div></header><main class=container><article class=post><header class=post__header><h1 class=post__title>プライバシーポリシー</h1></header><section class=post__content><h2 id=はじめに>はじめに</h2><p>xdcyw.net（以下「当サイト」）では、閲覧者のプライバシーを尊重し、個人を特定できる情報を取得しない方針で運営しています。本ポリシーでは、収集する情報・利用目的・第三者サービスとの関係を明示します。</p><h2 id=取得しない情報>取得しない情報</h2><ul><li>Google アナリティクスを含む外部トラッキングサービスは利用していません。</li><li>広告タグやサードパーティークッキーを埋め込んでいません。</li><li>お問い合わせフォームやコメント機能を設けておらず、閲覧者が入力した個人情報を収集する仕組みはありません。</li></ul><h2 id=自動的に取得される情報>自動的に取得される情報</h2><p>当サイトは Cloudflare Pages 上でホスティングされています。Cloudflare のセキュリティ・パフォーマンス向上機能により、以下のようなアクセスログが Cloudflare のインフラ上で取得・解析される場合があります。</p><ul><li>アクセス元 IP アドレスまたはその一部をもとにした地域情報</li><li>ブラウザや OS などのユーザーエージェント情報</li><li>参照元 URL、アクセス日時などの基本的なトラフィック情報</li></ul><p>これらのデータは Cloudflare が攻撃検知や統計のために利用するもので、当サイトの運営者は必要に応じてダッシュボードの集計値を参照するに留め、個人を特定する目的では利用しません。Cloudflare によるデータ処理の詳細は Cloudflare のプライバシーポリシーをご確認ください。</p><h2 id=ソースコードの公開>ソースコードの公開</h2><p>当サイトのソースコードは GitHub 上で公開しており、構成を誰でも確認できます。</p><ul><li>リポジトリ: <a href=https://github.com/fuyukihatune-rgb/xdcyw.net>https://github.com/fuyukihatune-rgb/xdcyw.net</a></li><li>ホスティング: Cloudflare Pages</li></ul><h2 id=cookie-について>Cookie について</h2><p>当サイト自身は Cookie を発行しません。ただし Cloudflare がサービス提供のために技術的 Cookie を用いる場合があります。これらは閲覧者の利便性向上ではなく Cloudflare のネットワーク運用に必要なものです。</p><h2 id=改定>改定</h2><p>本ポリシーは予告なく更新する場合があります。</p></section><footer class=article-share aria-label=シェア><span class=article-share__label>Share</span><div class=article-share__buttons><button class="article-share__button article-share__button--native" data-share-url=https://xdcyw.net/privacy/ data-share-title=プライバシーポリシー>Share</button>
-<button class="article-share__button article-share__button--copy" data-share-url=https://xdcyw.net/privacy/>Copy Link</button></div></footer></article></main><footer class=footer><p class=footer__message>明日もまた、同じ日が来るだろう。幸福は一生来ないのだ。それはわかっている。けれども、きっと来る、あすは来る、と信じて寝るのがいいのでしょう。</p></footer><script src=/js/main.js></script></div></body></html>
+<!DOCTYPE html>
+<html lang="ja">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー | xdcyw.net</title>
+    <meta name="description" content="xdcyw.net におけるデータの取り扱いについて">
+    <script>
+      (function() {
+        const storedTheme = localStorage.getItem('xdcyw-theme');
+        const theme = storedTheme || 'light';
+        if (theme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+        }
+      })();
+    </script>
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto+Mono&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="crt-container">
+    <header class="site-header">
+        <div class="site-header__container container">
+            
+            
+            <p class="site-logo"><a href="/">xdcyw.net</a></p>
+            
+            
+            
+            <nav class="site-nav" aria-label="primary">
+                <ul class="site-nav__list">
+                    
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="/about/">profile</a>
+                    </li>
+                    
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="/posts/">posts</a>
+                    </li>
+                    
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="/privacy/">privacy</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="テーマ切替"></button>
+        </div>
+    </header>
+    <main class="container">
+        
+    <article class="post">
+        <header class="post__header">
+            <h1 class="post__title">プライバシーポリシー</h1>
+            
+        </header>
+        <section class="post__content">
+            <h2 id="はじめに">はじめに</h2>
+<p>xdcyw.net（以下「当サイト」）では、閲覧者のプライバシーを尊重し、個人を特定できる情報を取得しない方針で運営しています。本ポリシーでは、収集する情報・利用目的・第三者サービスとの関係を明示します。</p>
+<h2 id="取得しない情報">取得しない情報</h2>
+<ul>
+<li>Google アナリティクスを含む外部トラッキングサービスは利用していません。</li>
+<li>広告タグやサードパーティークッキーを埋め込んでいません。</li>
+<li>お問い合わせフォームやコメント機能を設けておらず、閲覧者が入力した個人情報を収集する仕組みはありません。</li>
+</ul>
+<h2 id="自動的に取得される情報">自動的に取得される情報</h2>
+<p>当サイトは Cloudflare Pages 上でホスティングされています。Cloudflare のセキュリティ・パフォーマンス向上機能により、以下のようなアクセスログが Cloudflare のインフラ上で取得・解析される場合があります。</p>
+<ul>
+<li>アクセス元 IP アドレスまたはその一部をもとにした地域情報</li>
+<li>ブラウザや OS などのユーザーエージェント情報</li>
+<li>参照元 URL、アクセス日時などの基本的なトラフィック情報</li>
+</ul>
+<p>これらのデータは Cloudflare が攻撃検知や統計のために利用するもので、当サイトの運営者は必要に応じてダッシュボードの集計値を参照するに留め、個人を特定する目的では利用しません。Cloudflare によるデータ処理の詳細は Cloudflare のプライバシーポリシーをご確認ください。</p>
+<h2 id="ソースコードの公開">ソースコードの公開</h2>
+<p>当サイトのソースコードは GitHub 上で公開しており、構成を誰でも確認できます。</p>
+<ul>
+<li>リポジトリ: <a href="https://github.com/fuyukihatune-rgb/xdcyw.net">https://github.com/fuyukihatune-rgb/xdcyw.net</a></li>
+<li>ホスティング: Cloudflare Pages</li>
+</ul>
+<h2 id="cookie-について">Cookie について</h2>
+<p>当サイト自身は Cookie を発行しません。ただし Cloudflare がサービス提供のために技術的 Cookie を用いる場合があります。これらは閲覧者の利便性向上ではなく Cloudflare のネットワーク運用に必要なものです。</p>
+<h2 id="改定">改定</h2>
+<p>本ポリシーは予告なく更新する場合があります。</p>
+
+        </section>
+        <footer class="article-share" aria-label="シェア">
+            <span class="article-share__label">Share</span>
+            <div class="article-share__buttons">
+                <button class="article-share__button article-share__button--native" data-share-url="http://localhost:1313/privacy/" data-share-title="プライバシーポリシー">Share</button>
+                <button class="article-share__button article-share__button--copy" data-share-url="http://localhost:1313/privacy/">Copy Link</button>
+            </div>
+        </footer>
+    </article>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__message">明日もまた、同じ日が来るだろう。幸福は一生来ないのだ。それはわかっている。けれども、きっと来る、あすは来る、と信じて寝るのがいいのでしょう。</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</div>
+
+</body>
+</html>
