@@ -9,6 +9,18 @@
     {{- else if .IsHome }}
     <meta name="description" content="Concept's personal website, presented as a virtual terminal.">
     {{- end }}
+    <script>
+      (function() {
+        const storedTheme = localStorage.getItem('xdcyw-theme');
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const theme = storedTheme || (prefersDark ? 'dark' : 'dark');
+        if (theme === 'light') {
+          document.documentElement.setAttribute('data-theme', 'light');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+        }
+      })();
+    </script>
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -39,6 +51,7 @@
                 </ul>
             </nav>
             {{ end }}
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="テーマ切替"></button>
         </div>
     </header>
     <main class="container">
@@ -46,35 +59,9 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__keys">
-            <p class="key-info"><span class="key-label">Session:</span> <span class="key-value">05198a577132c72f1ea8c3f0b1cbad6ae5bea53e6dfd3b2b15e76609f1dd226026</span></p>
-            <p class="key-info"><span class="key-label">ETH:</span> <span class="key-value">0x6fe147f8452578b066567f7f862d0622AfD2cb91</span></p>
-        </div>
-        <p class="footer__message">Press any key to get a new quote.</p>
-        <button id="secret-terminal-trigger" class="secret-terminal" type="button">
-            <span class="sr-only">Launch terminal</span><span aria-hidden="true">.</span>
-        </button>
+        <p class="footer__message">明日もまた、同じ日が来るだろう。幸福は一生来ないのだ。それはわかっている。けれども、きっと来る、あすは来る、と信じて寝るのがいいのでしょう。</p>
     </footer>
 
-    <!-- Terminal Popup -->
-    <div id="terminal-container" class="terminal-overlay is-hidden">
-        <div class="terminal">
-            <header class="terminal__header">
-                <span class="terminal__title"></span>
-                <div class="terminal__controls">
-                    <span id="terminal-close-btn" class="terminal__control terminal__control--close"></span>
-                </div>
-            </header>
-            <div id="screen" class="terminal__screen">
-                <form class="terminal__prompt">
-                    <span class="prompt-user"></span><span class="prompt-at">@</span><span class="prompt-host"></span><span class="prompt-colon">:</span><span class="prompt-dir"></span><span class="prompt-symbol"></span>
-                    <input type="text" id="commandInput" class="terminal__input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <script src="/js/terminal.js"></script>
     <script src="/js/main.js"></script>
 </div>
 

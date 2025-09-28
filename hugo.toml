@@ -13,6 +13,11 @@ title = 'xdcyw.net'
     name = "posts"
     url = "/posts/"
     weight = 10
+  [[menu.main]]
+    identifier = "privacy"
+    name = "privacy"
+    url = "/privacy/"
+    weight = 30
 
 [markup]
   [markup.goldmark]

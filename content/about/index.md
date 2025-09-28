@@ -1,24 +1,10 @@
 ---
-title: "PROFILE"
-description: "サイト運営者 Concept の自己紹介と現在のステータス"
+description: "サイト運営者の自己紹介と現在のステータス"
 date: 2024-01-01T00:00:00+09:00
 ---
 
-<section class="section-intro">
-  <p class="section-intro__lead">札幌市近郊で暮らす双極性障害 I 型・解離性障害・ADHD 当事者です。体調管理と就学準備を両立しながら、司法試験予備試験に向けた学習を進めています。</p>
-  <p class="section-intro__note">このページでは、端末テーマの演出から少し離れて、現在地や取り組み、連絡手段をシンプルにまとめました。</p>
-</section>
 
-<section class="profile-section">
-  <h2 class="section-title">&gt; /NOW_LOADING</h2>
-  <ul class="profile-list">
-    <li><span class="profile-marker">&gt;</span>所在地: 北海道札幌市近郊 / 在宅療養をベースに活動</li>
-    <li><span class="profile-marker">&gt;</span>セクシュアリティ: パンセクシャル</li>
-  </ul>
-</section>
 
-<section class="profile-section profile-section--essay">
-  <h2 class="section-title">&gt; /STORY</h2>
   <div class="profile-essay">
     <h3 class="profile-essay__heading">自己紹介</h3>
     <p>長文ですが読んでくれると嬉しいです。</p>

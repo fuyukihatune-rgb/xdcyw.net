@@ -9,5 +9,12 @@
         <section class="post__content">
             {{ .Content }}
         </section>
+        <footer class="article-share" aria-label="シェア">
+            <span class="article-share__label">Share</span>
+            <div class="article-share__buttons">
+                <button class="article-share__button article-share__button--native" data-share-url="{{ .Permalink }}" data-share-title="{{ .Title }}">Share</button>
+                <button class="article-share__button article-share__button--copy" data-share-url="{{ .Permalink }}">Copy Link</button>
+            </div>
+        </footer>
     </article>
 {{ end }}
