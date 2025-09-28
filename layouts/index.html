@@ -1,0 +1,34 @@
+{{ define "main" }}
+    <section class="home-intro">
+        <h2 class="section-title">ようこそ</h2>
+        <p class="home-intro__lead">札幌市近郊で暮らしながら、司法試験予備試験合格を目指して学習を続けています。双極性障害・解離性障害・ADHD と付き合いつつ、家族と生活のバランスを取りながら前に進む記録を残しています。</p>
+        <ul class="home-intro__meta">
+            <li><span class="home-intro__label">フォーカス</span><span>法律学習 / 体調管理 / 日々の気づき</span></li>
+            <li><span class="home-intro__label">セクシュアリティ</span><span>パンセクシャル</span></li>
+            <li><span class="home-intro__label">現在地</span><span>北海道札幌市近郊</span></li>
+        </ul>
+    </section>
+
+    <section class="home-posts">
+        <div class="home-posts__header">
+            <h2 class="section-title">最新の記事</h2>
+            <a class="home-posts__more" href="/posts/">すべて見る</a>
+        </div>
+        <ul class="home-posts__list">
+            {{ $posts := where .Site.RegularPages "Type" "posts" }}
+            {{ if gt (len $posts) 0 }}
+                {{ range first 6 (sort $posts "Date" "desc") }}
+                    <li class="home-posts__item">
+                        <a class="home-posts__link" href="{{ .RelPermalink }}">
+                            <time class="home-posts__date" datetime="{{ .Date | time.Format "2006-01-02" }}">{{ .Date | time.Format "2006-01-02" }}</time>
+                            <span class="home-posts__title">{{ .Title }}</span>
+                            <span class="home-posts__summary">{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 120 }}{{ end }}</span>
+                        </a>
+                    </li>
+                {{ end }}
+            {{ else }}
+                <li class="home-posts__item home-posts__item--empty">記事がまだありません。</li>
+            {{ end }}
+        </ul>
+    </section>
+{{ end }}

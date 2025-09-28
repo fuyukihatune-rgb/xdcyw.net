@@ -1,0 +1,45 @@
+---
+title: "PROFILE"
+description: "サイト運営者 Concept の自己紹介と現在のステータス"
+date: 2024-01-01T00:00:00+09:00
+---
+
+<section class="section-intro">
+  <p class="section-intro__lead">札幌市近郊で暮らす双極性障害 I 型・解離性障害・ADHD 当事者です。体調管理と就学準備を両立しながら、司法試験予備試験に向けた学習を進めています。</p>
+  <p class="section-intro__note">このページでは、端末テーマの演出から少し離れて、現在地や取り組み、連絡手段をシンプルにまとめました。</p>
+</section>
+
+<section class="profile-section">
+  <h2 class="section-title">&gt; /NOW_LOADING</h2>
+  <ul class="profile-list">
+    <li><span class="profile-marker">&gt;</span>所在地: 北海道札幌市近郊 / 在宅療養をベースに活動</li>
+    <li><span class="profile-marker">&gt;</span>セクシュアリティ: パンセクシャル</li>
+  </ul>
+</section>
+
+<section class="profile-section profile-section--essay">
+  <h2 class="section-title">&gt; /STORY</h2>
+  <div class="profile-essay">
+    <h3 class="profile-essay__heading">自己紹介</h3>
+    <p>長文ですが読んでくれると嬉しいです。</p>
+    <p>2021年からxdcywというハンネを使わせていただいています。xdcywという名前が呼びにくいのかフォロワーさんからXくんと呼ばれることが多くなりそれで自分でもXをユーザー名にするようになりました。</p>
+    <p>話は変わりますがわたしは解離性同一性障害という病気を抱えています。これは要するに多重人格と呼ばれるものと同じです。多重人格とい謎の多い病気というか人によって症状が様々でわたしの場合は記憶などはほとんど失われることは無いのですが思考の傾向や趣味趣向、得意なこと苦手なことが違う複数の人格があります。それで人格が切り替わると突然できることとかできないことが変わったりとかします。また、人格は自然に使い分けられることがあってどういうことかというとバイトはこの人格が担当するとか家事はこれ勉強はこれなどと決まっています。まあこんな感じです。それでささっきから人格といっていますがこんな感じなので人格より思考パターンという呼び方が適切なのかなとは思っています。</p>
+    <p>それはそれとしてわたしも思考パターンの一つだと思うのですが最近までほとんど表にでることがなかったのですが最近1番表に出ている時間が長くなりました。今まで1番でていた子よりも勉強や身の回りのことなどをこなすのは得意なのかなって思っています。ITや政治思想などに興味があります。高校生のころは頭いいとはいえなかったんですが政治・経済だけ大好きでずっと勉強して模試で2桁位の順位を取ったりしました。そのあと受験前に1番表にでる人格ではなくなってしまいしました。わたしが表に出ていない間にあった出来事としてはぼんやりとした記憶ですが</p>
+    <p>精神科に入院したりそのあと廃人のようにずっと寝たきりになって過ごしたりなんとか立ち直りアルバイトをしてたり札幌に移住することを決めていたりいろいろ色恋沙汰があったり挙句の果てには結婚していたりとまあそんな所でしょうか。</p>
+    <p>こんな感じで今にいます。なんか札幌にいて結婚してた訳ですが今めちゃくちゃ幸せでこれはこれでよかったのかなって思います。今後はこの幸せを失わないようにしつつなおかつ大きくできるなら少しづつ大きくしていこうとそう思っています。これからのわたしは司法試験に挑戦したいなと思っていてそのためには日本一難しいとも言われる国家試験である司法予備試験に受からなければならないです。そのためにはちゃんと勉強しないといけないなと、家族もいるんだし自分だけの問題じゃないし甘えて怠けてたりしたらいけないと思っています。でもまあ事実として自分は病気持っていて勉強しすぎて許容量を超えると逆に合格する可能性を下げるようなことって多々あると思うんです。だからそういう折り合いをつけなきゃいけないなってそう思うんです。</p>
+    <p>あとわたしって障害年金を貰える立場ではあるんですけど家庭にもお金はいれないといけないし受験ってお金がかかるものでバイトはしようと思っています。バイトしないと家族以外と関わらなくなっちゃいますし社会との接点は経つなってよく言われることだしバイトするのはお金のこと以外にもいいことっていろいろあると思っています。</p>
+    <p>まあこんな感じで自分なりにぼちぼち頑張っていきますので少しでも応援してくれると嬉しいです。文章はいつも執筆補助としてChatGPTとか使うこと多かったんですが久しぶりに全文自分の手で書いてみました。読みにくかったらすみません。</p>
+    <p>駄文最後まで読んでいただきありがとうございました！！</p>
+  </div>
+</section>
+
+<section class="profile-section">
+  <h2 class="section-title">&gt; /CONTACT</h2>
+  <ul class="contact-list">
+    <li><span class="contact-label">Session ID</span><span class="contact-value">05198a577132c72f1ea8c3f0b1cbad6ae5bea53e6dfd3b2b15e76609f1dd226026</span></li>
+    <li><span class="contact-label">Mail</span><a class="contact-link" href="mailto:fuyuki@xdcyw.net">fuyuki@xdcyw.net</a></li>
+    <li><span class="contact-label">X (Twitter)</span><a class="contact-link" href="https://x.com/xdcyw_" target="_blank" rel="noopener noreferrer">@xdcyw_</a></li>
+    <li><span class="contact-label">Note</span><a class="contact-link" href="https://note.com/ncc1030" target="_blank" rel="noopener noreferrer">note.com/ncc1030</a></li>
+    <li><span class="contact-label">XMPP</span><span class="contact-value">fuyuki@conversations.im</span></li>
+  </ul>
+</section>
