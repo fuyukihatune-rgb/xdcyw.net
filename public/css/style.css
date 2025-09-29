@@ -382,6 +382,27 @@ section:last-of-type {
     text-decoration: underline;
 }
 
+.post__content blockquote {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-left: 4px solid var(--accent-strong);
+    background: var(--accent-overlay);
+    color: var(--text-color);
+    box-shadow: inset 0 0 0 1px rgba(217, 70, 170, 0.2);
+    border-radius: 12px;
+}
+
+.post__content blockquote p {
+    margin-bottom: 0.8rem;
+}
+
+.post__content blockquote cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--muted-text);
+}
+
 .section-subtitle {
     margin-top: 0.4rem;
     font-size: 1rem;
