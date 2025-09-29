@@ -10,10 +10,25 @@
             {{ range .Pages.ByDate.Reverse }}
             <li class="archive-list__item">
                 <a href="{{ .RelPermalink }}" class="archive-list__link">
-                    <time class="archive-list__date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
-                    <span class="archive-list__title">{{ .Title }}</span>
-                    <span class="archive-list__summary">{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 140 }}{{ end }}</span>
+                    <div class="archive-list__meta">
+                        <time class="archive-list__date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+                        <span class="archive-list__title">{{ .Title }}</span>
+                    </div>
+                    <p class="summary-card archive-list__summary">{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 140 }}{{ end }}</p>
                 </a>
+                {{ with .Params.categories }}
+                <div class="archive-list__footer">
+                    <ul class="archive-list__categories" aria-label="カテゴリ">
+                        {{ range . }}
+                        {{ $category := . }}
+                        {{ $termPath := printf "/categories/%s/" ($category | urlize) }}
+                        <li class="archive-list__category">
+                            <a class="category-chip" href="{{ $termPath | relURL }}">{{ $category }}</a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
             </li>
             {{ end }}
         </ul>

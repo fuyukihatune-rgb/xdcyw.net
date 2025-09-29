@@ -20,20 +20,24 @@
                 {{ range first 6 (sort $posts "Date" "desc") }}
                     <li class="home-posts__item">
                         <a class="home-posts__link" href="{{ .RelPermalink }}">
-                            <time class="home-posts__date" datetime="{{ .Date | time.Format "2006-01-02" }}">{{ .Date | time.Format "2006-01-02" }}</time>
-                            <span class="home-posts__title">{{ .Title }}</span>
-                            <span class="home-posts__summary">{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 120 }}{{ end }}</span>
+                            <div class="home-posts__meta">
+                                <time class="home-posts__date" datetime="{{ .Date | time.Format "2006-01-02" }}">{{ .Date | time.Format "2006-01-02" }}</time>
+                                <span class="home-posts__title">{{ .Title }}</span>
+                            </div>
+                            <p class="summary-card home-posts__summary">{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 120 }}{{ end }}</p>
                         </a>
                         {{ with .Params.categories }}
-                        <ul class="home-posts__categories" aria-label="カテゴリ">
-                            {{ range . }}
-                            {{ $category := . }}
-                            {{ $termPath := printf "/categories/%s/" ($category | urlize) }}
-                            <li class="home-posts__category">
-                                <a href="{{ $termPath | relURL }}">{{ $category }}</a>
-                            </li>
-                            {{ end }}
-                        </ul>
+                        <div class="home-posts__footer">
+                            <ul class="home-posts__categories" aria-label="カテゴリ">
+                                {{ range . }}
+                                {{ $category := . }}
+                                {{ $termPath := printf "/categories/%s/" ($category | urlize) }}
+                                <li class="home-posts__category">
+                                    <a class="category-chip" href="{{ $termPath | relURL }}">{{ $category }}</a>
+                                </li>
+                                {{ end }}
+                            </ul>
+                        </div>
                         {{ end }}
                     </li>
                 {{ end }}

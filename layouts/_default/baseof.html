@@ -6,6 +6,13 @@
     {{ $siteTitle := .Site.Title }}
     {{ $isHome := .IsHome }}
     {{ $pageTitle := cond $isHome $siteTitle (printf "%s | %s" .Title $siteTitle) }}
+    {{ $siteParams := .Site.Params }}
+    {{ $authorName := (.Params.author | default $siteParams.authorName | default $siteTitle) }}
+    {{ $alternateName := $siteParams.alternateName }}
+    {{ $sameAs := $siteParams.sameAs }}
+    {{ $languageCode := .Site.LanguageCode | default "ja" }}
+    {{ $publishedISO := "" }}
+    {{ $modifiedISO := "" }}
     <title>{{ $pageTitle }}</title>
 
     {{ $description := "" }}
@@ -23,6 +30,10 @@
       <meta name="description" content="{{ $description }}">
     {{ end }}
 
+    {{ if $authorName }}
+      <meta name="author" content="{{ $authorName }}">
+    {{ end }}
+
     {{ $canonical := "" }}
     {{ if .IsHome }}
       {{ $canonical = .Site.BaseURL }}
@@ -32,6 +43,18 @@
     {{ if $canonical }}
       <link rel="canonical" href="{{ $canonical }}">
       <meta property="og:url" content="{{ $canonical }}">
+    {{ end }}
+
+    {{ with .OutputFormats.Get "RSS" }}
+      <link rel="alternate" type="{{ .MediaType.Type }}" title="{{ $.Site.Title }}" href="{{ .RelPermalink }}">
+    {{ end }}
+
+    {{ $updated := .Lastmod }}
+    {{ if $isHome }}
+      {{ $updated = .Site.LastChange }}
+    {{ end }}
+    {{ if and $updated (not ($updated.IsZero)) }}
+      <meta property="og:updated_time" content="{{ $updated.Format "2006-01-02T15:04:05Z07:00" }}">
     {{ end }}
 
     <meta property="og:title" content="{{ $pageTitle }}">
@@ -60,6 +83,9 @@
       {{ $image = $image | absURL }}
       <meta property="og:image" content="{{ $image }}">
       <meta name="twitter:image" content="{{ $image }}">
+      {{ $imageAlt := .Params.imageAlt | default (cond $isHome (printf "%sのサイトイメージ" $siteTitle) (printf "%sのアイキャッチ" .Title)) }}
+      <meta property="og:image:alt" content="{{ $imageAlt }}">
+      <meta name="twitter:image:alt" content="{{ $imageAlt }}">
     {{ end }}
 
     {{ $twitterCard := "summary" }}
@@ -74,6 +100,73 @@
     {{ with .Site.Params.twitterSite }}
       <meta name="twitter:site" content="{{ . }}">
     {{ end }}
+    {{ with .Site.Params.twitterCreator }}
+      <meta name="twitter:creator" content="{{ . }}">
+    {{ end }}
+    {{ if .IsPage }}
+      {{ $published := .PublishDate }}
+      {{ if $published.IsZero }}
+        {{ $published = .Date }}
+      {{ end }}
+      {{ if and $published (not ($published.IsZero)) }}
+        {{ $publishedISO = $published.Format "2006-01-02T15:04:05Z07:00" }}
+        <meta property="article:published_time" content="{{ $publishedISO }}">
+      {{ end }}
+      {{ $modified := .Lastmod }}
+      {{ if and $modified (not ($modified.IsZero)) }}
+        {{ $modifiedISO = $modified.Format "2006-01-02T15:04:05Z07:00" }}
+        <meta property="article:modified_time" content="{{ $modifiedISO }}">
+      {{ end }}
+      {{ with .Params.categories }}
+        {{ range . }}
+          <meta property="article:tag" content="{{ . }}">
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{ $publisher := dict "@type" "Person" "name" $authorName }}
+    {{ with $alternateName }}
+      {{ $publisher = merge $publisher (dict "alternateName" .) }}
+    {{ end }}
+    {{ with $sameAs }}
+      {{ if gt (len .) 0 }}
+        {{ $publisher = merge $publisher (dict "sameAs" .) }}
+      {{ end }}
+    {{ end }}
+
+    {{ $webSiteLD := dict "@context" "https://schema.org" "@type" "WebSite" "url" $canonical "name" $siteTitle "inLanguage" $languageCode "publisher" $publisher }}
+    {{ if $description }}
+      {{ $webSiteLD = merge $webSiteLD (dict "description" $description) }}
+    {{ end }}
+    <script type="application/ld+json">{{ $webSiteLD | jsonify | safeJS }}</script>
+
+    {{ if .IsPage }}
+      {{ $article := dict "@context" "https://schema.org" "@type" "Article" "mainEntityOfPage" (dict "@type" "WebPage" "@id" $canonical) "headline" .Title "inLanguage" $languageCode "author" (slice (dict "@type" "Person" "name" $authorName)) "publisher" $publisher }}
+      {{ if $description }}
+        {{ $article = merge $article (dict "description" $description) }}
+      {{ end }}
+      {{ if $publishedISO }}
+        {{ $article = merge $article (dict "datePublished" $publishedISO) }}
+      {{ end }}
+      {{ if $modifiedISO }}
+        {{ $article = merge $article (dict "dateModified" $modifiedISO) }}
+      {{ end }}
+      {{ if $image }}
+        {{ $article = merge $article (dict "image" (slice $image)) }}
+      {{ end }}
+      {{ with .Params.categories }}
+        {{ if gt (len .) 0 }}
+          {{ $article = merge $article (dict "articleSection" .) }}
+        {{ end }}
+      {{ end }}
+      {{ with .Params.tags }}
+        {{ if gt (len .) 0 }}
+          {{ $article = merge $article (dict "keywords" .) }}
+        {{ end }}
+      {{ end }}
+      <script type="application/ld+json">{{ $article | jsonify | safeJS }}</script>
+    {{ end }}
+
     {{ with .Site.Params.adsenseClient }}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ . }}" crossorigin="anonymous"></script>
     {{ end }}

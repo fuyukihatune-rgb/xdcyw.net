@@ -13,7 +13,7 @@
                 {{ $category := . }}
                 {{ $termPath := printf "/categories/%s/" ($category | urlize) }}
                 <li class="post__category">
-                    <a href="{{ $termPath | relURL }}">{{ $category }}</a>
+                    <a class="category-chip" href="{{ $termPath | relURL }}">{{ $category }}</a>
                 </li>
                 {{ end }}
             </ul>
