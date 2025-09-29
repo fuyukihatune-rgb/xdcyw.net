@@ -792,10 +792,11 @@ section:last-of-type {
 }
 
 .archive-list__meta {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.4rem 1.2rem;
+    display: grid;
+    grid-template-columns: minmax(110px, 140px) 1fr;
+    align-items: baseline;
+    column-gap: 1.2rem;
+    row-gap: 0.4rem;
 }
 
 .archive-list__date {
@@ -1093,6 +1094,13 @@ section:last-of-type {
     .archive-list__footer {
         padding-left: 1.35rem;
         padding-right: 1.35rem;
+    }
+
+    .archive-list__meta {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
     }
 
     .home-posts__title,
