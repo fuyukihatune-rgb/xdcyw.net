@@ -74,6 +74,9 @@
     {{ with .Site.Params.twitterSite }}
       <meta name="twitter:site" content="{{ . }}">
     {{ end }}
+    {{ with .Site.Params.adsenseClient }}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ . }}" crossorigin="anonymous"></script>
+    {{ end }}
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">

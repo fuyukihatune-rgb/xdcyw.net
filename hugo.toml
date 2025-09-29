@@ -5,6 +5,7 @@ title = 'xdcyw.net'
 [params]
   description = "Concept's personal website, presented as a virtual terminal."
   ogDefaultImage = "/ChatGPT Image 2025年9月29日 07_10_21.png"
+  adsenseClient = ""
 
 [taxonomies]
   category = "categories"
