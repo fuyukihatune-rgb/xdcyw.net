@@ -1,18 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>サイト情報 on xdcyw.net</title>
-    <link>https://www.xdcyw.net/categories/%E3%82%B5%E3%82%A4%E3%83%88%E6%83%85%E5%A0%B1/</link>
-    <description>Recent content in サイト情報 on xdcyw.net</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <atom:link href="https://www.xdcyw.net/categories/%E3%82%B5%E3%82%A4%E3%83%88%E6%83%85%E5%A0%B1/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>プライバシーポリシー</title>
-      <link>https://www.xdcyw.net/privacy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.xdcyw.net/privacy/</guid>
-      <description>はじめに xdcyw.net（以下「当サイト」）では、閲覧者のプライバシーを尊重し、個人を特定できる情報を取得しない方針で運営しています。本ポリシーでは、収集する情報・利用目的・第三者サービスとの関係を明示します。&#xA;取得しない情報 Google アナリティクスを含む外部トラッキングサービスは利用していません。 広告タグやサードパーティークッキーを埋め込んでいません。 お問い合わせフォームやコメント機能を設けておらず、閲覧者が入力した個人情報を収集する仕組みはありません。 自動的に取得される情報 当サイトは Cloudflare Pages 上でホスティングされています。Cloudflare のセキュリティ・パフォーマンス向上機能により、以下のようなアクセスログが Cloudflare のインフラ上で取得・解析される場合があります。&#xA;アクセス元 IP アドレスまたはその一部をもとにした地域情報 ブラウザや OS などのユーザーエージェント情報 参照元 URL、アクセス日時などの基本的なトラフィック情報 これらのデータは Cloudflare が攻撃検知や統計のために利用するもので、当サイトの運営者は必要に応じてダッシュボードの集計値を参照するに留め、個人を特定する目的では利用しません。Cloudflare によるデータ処理の詳細は Cloudflare のプライバシーポリシーをご確認ください。&#xA;ソースコードの公開 当サイトのソースコードは GitHub 上で公開しており、構成を誰でも確認できます。&#xA;リポジトリ: https://github.com/fuyukihatune-rgb/xdcyw.net ホスティング: Cloudflare Pages Cookie について 当サイト自身は Cookie を発行しません。ただし Cloudflare がサービス提供のために技術的 Cookie を用いる場合があります。これらは閲覧者の利便性向上ではなく Cloudflare のネットワーク運用に必要なものです。&#xA;改定 本ポリシーは予告なく更新する場合があります。</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>サイト情報 on xdcyw.net</title><link>https://www.xdcyw.net/categories/%E3%82%B5%E3%82%A4%E3%83%88%E6%83%85%E5%A0%B1/</link><description>Recent content in サイト情報 on xdcyw.net</description><generator>Hugo -- gohugo.io</generator><language>ja</language><atom:link href="https://www.xdcyw.net/categories/%E3%82%B5%E3%82%A4%E3%83%88%E6%83%85%E5%A0%B1/index.xml" rel="self" type="application/rss+xml"/><item><title>プライバシーポリシー</title><link>https://www.xdcyw.net/privacy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.xdcyw.net/privacy/</guid><description>はじめに xdcyw.net（以下「当サイト」）では、閲覧者のプライバシーを尊重し、個人を特定できる情報を取得しない方針で運営しています。本ポリシーでは、収集する情報・利用目的・第三者サービスとの関係を明示します。
+取得しない情報 Google アナリティクスを含む外部トラッキングサービスは利用していません。 広告タグやサードパーティークッキーを埋め込んでいません。 お問い合わせフォームやコメント機能を設けておらず、閲覧者が入力した個人情報を収集する仕組みはありません。 自動的に取得される情報 当サイトは Cloudflare Pages 上でホスティングされています。Cloudflare のセキュリティ・パフォーマンス向上機能により、以下のようなアクセスログが Cloudflare のインフラ上で取得・解析される場合があります。
+アクセス元 IP アドレスまたはその一部をもとにした地域情報 ブラウザや OS などのユーザーエージェント情報 参照元 URL、アクセス日時などの基本的なトラフィック情報 これらのデータは Cloudflare が攻撃検知や統計のために利用するもので、当サイトの運営者は必要に応じてダッシュボードの集計値を参照するに留め、個人を特定する目的では利用しません。Cloudflare によるデータ処理の詳細は Cloudflare のプライバシーポリシーをご確認ください。
+ソースコードの公開 当サイトのソースコードは GitHub 上で公開しており、構成を誰でも確認できます。
+リポジトリ: https://github.com/fuyukihatune-rgb/xdcyw.net ホスティング: Cloudflare Pages Cookie について 当サイト自身は Cookie を発行しません。ただし Cloudflare がサービス提供のために技術的 Cookie を用いる場合があります。これらは閲覧者の利便性向上ではなく Cloudflare のネットワーク運用に必要なものです。
+改定 本ポリシーは予告なく更新する場合があります。</description></item></channel></rss>

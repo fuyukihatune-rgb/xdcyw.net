@@ -51,7 +51,7 @@
 
     {{ $updated := .Lastmod }}
     {{ if $isHome }}
-      {{ $updated = .Site.LastChange }}
+      {{ $updated = .Site.Lastmod }}
     {{ end }}
     {{ if and $updated (not ($updated.IsZero)) }}
       <meta property="og:updated_time" content="{{ $updated.Format "2006-01-02T15:04:05Z07:00" }}">
