@@ -342,6 +342,7 @@ section:last-of-type {
 
 .post-figure img {
     display: inline-block;
+    width: min(100%, 620px);
     max-width: 100%;
     height: auto;
     border-radius: 16px;
