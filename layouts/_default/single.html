@@ -11,13 +11,9 @@
             <ul class="post__categories">
                 {{ range . }}
                 {{ $category := . }}
-                {{ $termPage := $.Site.GetPage (printf "/categories/%s" ($category | urlize)) }}
+                {{ $termPath := printf "/categories/%s/" ($category | urlize) }}
                 <li class="post__category">
-                    {{ if $termPage }}
-                    <a href="{{ $termPage.RelPermalink }}">{{ $category }}</a>
-                    {{ else }}
-                    <span>{{ $category }}</span>
-                    {{ end }}
+                    <a href="{{ $termPath | relURL }}">{{ $category }}</a>
                 </li>
                 {{ end }}
             </ul>

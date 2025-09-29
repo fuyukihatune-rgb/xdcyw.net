@@ -19,6 +19,17 @@
                     <span class="archive-list__title">{{ .Title }}</span>
                     <span class="archive-list__summary">{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 140 }}{{ end }}</span>
                 </a>
+                {{ with .Params.categories }}
+                <ul class="archive-list__categories" aria-label="カテゴリ">
+                    {{ range . }}
+                    {{ $category := . }}
+                    {{ $termPath := printf "/categories/%s/" ($category | urlize) }}
+                    <li class="archive-list__category">
+                        <a href="{{ $termPath | relURL }}">{{ $category }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+                {{ end }}
             </li>
             {{ end }}
         </ul>

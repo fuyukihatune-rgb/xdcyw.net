@@ -24,6 +24,17 @@
                             <span class="home-posts__title">{{ .Title }}</span>
                             <span class="home-posts__summary">{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 120 }}{{ end }}</span>
                         </a>
+                        {{ with .Params.categories }}
+                        <ul class="home-posts__categories" aria-label="カテゴリ">
+                            {{ range . }}
+                            {{ $category := . }}
+                            {{ $termPath := printf "/categories/%s/" ($category | urlize) }}
+                            <li class="home-posts__category">
+                                <a href="{{ $termPath | relURL }}">{{ $category }}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                        {{ end }}
                     </li>
                 {{ end }}
             {{ else }}
