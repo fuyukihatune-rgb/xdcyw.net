@@ -310,6 +310,44 @@ section:last-of-type {
     color: var(--muted-text);
 }
 
+.embed-list {
+    display: grid;
+    gap: 1.5rem;
+    margin: 1.5rem 0 2rem;
+}
+
+.responsive-embed {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 12px 28px rgba(47, 38, 68, 0.14);
+    background: #000;
+}
+
+.responsive-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.post-figure {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.post-figure img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(47, 38, 68, 0.12);
+}
+
 .post__content {
     font-family: var(--font-sans-serif);
     line-height: 1.85;

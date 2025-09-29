@@ -45,12 +45,17 @@ DSMは例えば〇〇という病気をするならいかにあげられてい�
 だと思う)の動画を見てみました。
 
 以下の動画です。
-<div>
+<div class="embed-list">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YSsIVEH1I6A?si=vU3Jio4duuKLoqD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="responsive-embed">
+<iframe src="https://www.youtube.com/embed/YSsIVEH1I6A?si=vU3Jio4duuKLoqD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
+<div class="responsive-embed">
+<iframe src="https://www.youtube.com/embed/Far6pz8BDfg?si=mmMoXZa4oOn4jAhq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Far6pz8BDfg?si=mmMoXZa4oOn4jAhq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 
 
@@ -62,7 +67,9 @@ DSMは例えば〇〇という病気をするならいかにあげられてい�
 
 
 
-<img src="https://pbs.twimg.com/media/G18GXR7aQAA7g_9?format=jpg&name=large" width="65%">
+<figure class="post-figure">
+<img src="https://pbs.twimg.com/media/G18GXR7aQAA7g_9?format=jpg&name=large" alt="BPDに関する同一性の障害についての図解">
+</figure>
 
 
 上記で示されているような同一性の障害っていうのがあるっぽくて

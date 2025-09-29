@@ -6,12 +6,12 @@
     <description>Recent content in Categories on xdcyw.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 28 Sep 2025 17:09:43 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 29 Sep 2025 06:54:44 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>メンタルヘルス</title>
       <link>http://localhost:1313/categories/%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB%E3%83%98%E3%83%AB%E3%82%B9/</link>
-      <pubDate>Sun, 28 Sep 2025 17:09:43 +0900</pubDate>
+      <pubDate>Mon, 29 Sep 2025 06:54:44 +0900</pubDate>
       <guid>http://localhost:1313/categories/%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB%E3%83%98%E3%83%AB%E3%82%B9/</guid>
       <description></description>
     </item>
@@ -20,6 +20,13 @@
       <link>http://localhost:1313/categories/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88/</link>
       <pubDate>Sun, 28 Sep 2025 11:19:27 +0900</pubDate>
       <guid>http://localhost:1313/categories/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>サイト情報</title>
+      <link>http://localhost:1313/categories/%E3%82%B5%E3%82%A4%E3%83%88%E6%83%85%E5%A0%B1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/%E3%82%B5%E3%82%A4%E3%83%88%E6%83%85%E5%A0%B1/</guid>
       <description></description>
     </item>
   </channel>
