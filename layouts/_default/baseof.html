@@ -3,23 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
-    {{- if .Description }}
-    <meta name="description" content="{{ .Description }}">
-    {{- else if .IsHome }}
-    <meta name="description" content="Concept's personal website, presented as a virtual terminal.">
-    {{- end }}
-    <script>
-      (function() {
-        const storedTheme = localStorage.getItem('xdcyw-theme');
-        const theme = storedTheme || 'light';
-        if (theme === 'dark') {
-          document.documentElement.setAttribute('data-theme', 'dark');
-        } else {
-          document.documentElement.removeAttribute('data-theme');
-        }
-      })();
-    </script>
+    {{ $siteTitle := .Site.Title }}
+    {{ $isHome := .IsHome }}
+    {{ $pageTitle := cond $isHome $siteTitle (printf "%s | %s" .Title $siteTitle) }}
+    <title>{{ $pageTitle }}</title>
+
+    {{ $description := "" }}
+    {{ if .Params.description }}
+      {{ $description = .Params.description }}
+    {{ else if .Description }}
+      {{ $description = .Description }}
+    {{ else if and .IsPage (.Summary) }}
+      {{ $description = .Summary }}
+    {{ else if .Site.Params.description }}
+      {{ $description = .Site.Params.description }}
+    {{ end }}
+    {{ if $description }}
+      {{ $description = $description | plainify | htmlUnescape | trim " \n\r\t" }}
+      <meta name="description" content="{{ $description }}">
+    {{ end }}
+
+    {{ $canonical := "" }}
+    {{ if .IsHome }}
+      {{ $canonical = .Site.BaseURL }}
+    {{ else }}
+      {{ $canonical = .Permalink }}
+    {{ end }}
+    {{ if $canonical }}
+      <link rel="canonical" href="{{ $canonical }}">
+      <meta property="og:url" content="{{ $canonical }}">
+    {{ end }}
+
+    <meta property="og:title" content="{{ $pageTitle }}">
+    <meta property="og:site_name" content="{{ $siteTitle }}">
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+    <meta property="og:locale" content="ja_JP">
+    {{ if $description }}
+      <meta property="og:description" content="{{ $description }}">
+    {{ end }}
+
+    {{ $image := "" }}
+    {{ with .Params.images }}
+      {{ if gt (len .) 0 }}
+        {{ $image = index . 0 }}
+      {{ end }}
+    {{ end }}
+    {{ with .Params.image }}
+      {{ $image = . }}
+    {{ end }}
+    {{ with .Site.Params.ogDefaultImage }}
+      {{ if not $image }}
+        {{ $image = . }}
+      {{ end }}
+    {{ end }}
+    {{ if $image }}
+      {{ $image = $image | absURL }}
+      <meta property="og:image" content="{{ $image }}">
+      <meta name="twitter:image" content="{{ $image }}">
+    {{ end }}
+
+    {{ $twitterCard := "summary" }}
+    {{ if $image }}
+      {{ $twitterCard = "summary_large_image" }}
+    {{ end }}
+    <meta name="twitter:card" content="{{ $twitterCard }}">
+    <meta name="twitter:title" content="{{ $pageTitle }}">
+    {{ if $description }}
+      <meta name="twitter:description" content="{{ $description }}">
+    {{ end }}
+    {{ with .Site.Params.twitterSite }}
+      <meta name="twitter:site" content="{{ . }}">
+    {{ end }}
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -50,7 +104,6 @@
                 </ul>
             </nav>
             {{ end }}
-            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="テーマ切替"></button>
         </div>
     </header>
     <main class="container">

@@ -1,0 +1,24 @@
+{{ define "main" }}
+    <section class="page-header">
+        <h2 class="section-title">{{ .Title }}</h2>
+        {{ with .Description }}<p class="section-subtitle">{{ . }}</p>{{ end }}
+    </section>
+
+    {{ $terms := .Data.Terms }}
+    {{ if gt (len $terms) 0 }}
+    <section class="taxonomy-terms">
+        <ul class="taxonomy-terms__items">
+            {{ range $terms.Alphabetical }}
+            <li class="taxonomy-terms__item">
+                <a class="taxonomy-terms__link" href="{{ .Page.RelPermalink }}">
+                    <span class="taxonomy-terms__name">{{ .Page.Title }}</span>
+                    <span class="taxonomy-terms__count" aria-label="記事数">{{ .Count }}</span>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </section>
+    {{ else }}
+    <p class="taxonomy-terms__empty">まだカテゴリがありません。</p>
+    {{ end }}
+{{ end }}

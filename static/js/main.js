@@ -78,26 +78,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
-  const themeToggleBtn = document.getElementById('theme-toggle');
-  if (themeToggleBtn) {
-    const getTheme = () => document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
-
-    const setTheme = theme => {
-      if (theme === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'dark');
-      } else {
-        document.documentElement.removeAttribute('data-theme');
-      }
-      localStorage.setItem('xdcyw-theme', theme);
-      themeToggleBtn.textContent = theme === 'dark' ? 'Light' : 'Dark';
-    };
-
-    setTheme(getTheme());
-
-    themeToggleBtn.addEventListener('click', () => {
-      const nextTheme = getTheme() === 'dark' ? 'light' : 'dark';
-      setTheme(nextTheme);
-    });
-  }
 });

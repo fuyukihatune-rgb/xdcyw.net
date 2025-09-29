@@ -1,0 +1,24 @@
+{{ define "main" }}
+    <section class="page-header">
+        <h2 class="section-title">{{ .Title }}</h2>
+        <p class="section-subtitle">{{ len .Pages }} 件の記事</p>
+    </section>
+
+    {{ if .Pages }}
+    <section class="archive-list">
+        <ul class="archive-list__items">
+            {{ range .Pages.ByDate.Reverse }}
+            <li class="archive-list__item">
+                <a href="{{ .RelPermalink }}" class="archive-list__link">
+                    <time class="archive-list__date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+                    <span class="archive-list__title">{{ .Title }}</span>
+                    <span class="archive-list__summary">{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 140 }}{{ end }}</span>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </section>
+    {{ else }}
+    <p class="archive-list__empty">このカテゴリにはまだ記事がありません。</p>
+    {{ end }}
+{{ end }}

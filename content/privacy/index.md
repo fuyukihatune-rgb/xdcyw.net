@@ -1,6 +1,8 @@
 ---
 title: "プライバシーポリシー"
 description: "xdcyw.net におけるデータの取り扱いについて"
+categories:
+  - サイト情報
 ---
 
 ## はじめに

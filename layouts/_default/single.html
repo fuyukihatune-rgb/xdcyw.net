@@ -6,6 +6,23 @@
             <time class="post__date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
             {{ end }}
         </header>
+        {{ with .Params.categories }}
+        <aside class="post__meta" aria-label="カテゴリ">
+            <ul class="post__categories">
+                {{ range . }}
+                {{ $category := . }}
+                {{ $termPage := $.Site.GetPage (printf "/categories/%s" ($category | urlize)) }}
+                <li class="post__category">
+                    {{ if $termPage }}
+                    <a href="{{ $termPage.RelPermalink }}">{{ $category }}</a>
+                    {{ else }}
+                    <span>{{ $category }}</span>
+                    {{ end }}
+                </li>
+                {{ end }}
+            </ul>
+        </aside>
+        {{ end }}
         <section class="post__content">
             {{ .Content }}
         </section>
