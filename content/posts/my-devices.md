@@ -2,8 +2,26 @@
 title: "リハビリを兼ねて使用しているデバイスについて紹介してみる回"
 date: 2025-09-28T11:19:27+09:00
 draft: false
+description: "筆者が普段使用しているITデバイスを紹介する記事です。自作PCやThinkpad、Macbook Proといったパソコンから、CMF by nothing phone 1、ダイソーのワイヤレスイヤホンまで、それぞれのスペックや使用感をレビューしています。"
 categories:
-  - ガジェット
+  - "ガジェット"
+tags:
+  - "ガジェット"
+  - "PC"
+  - "自作PC"
+  - "スマホ"
+  - "イヤホン"
+keywords:
+  - "ガジェット"
+  - "デバイス"
+  - "PC"
+  - "自作PC"
+  - "Thinkpad"
+  - "Macbook Pro"
+  - "CMF by nothing phone 1"
+  - "ワイヤレスイヤホン"
+  - "ダイソー"
+  - "レビュー"
 ---
 
 ## はじめに

@@ -67,23 +67,23 @@
 
     {{ $image := "" }}
     {{ with .Params.images }}
-      {{ if gt (len .) 0 }}
-        {{ $image = index . 0 }}
+      {{ if gt (len .) 0 }}{{ $image = index . 0 | absURL }}{{ end }}
+    {{ end }}
+    {{ if not $image }}{{ with .Params.image }}{{ $image = . | absURL }}{{ end }}{{ end }}
+
+    {{ if not $image }}
+      {{ if .IsPage }}
+        {{ $ogTitle := .Title | urlquery }}
+        {{ $image = printf "https://og.vercel.app/%s.png?theme=light&md=1&fontSize=100px&images=https%%3A%%2F%%2Fwww.xdcyw.net%%2Ffavicon.svg" $ogTitle }}
+      {{ else }}
+        {{ with .Site.Params.ogDefaultImage }}{{ $image = . | absURL }}{{ end }}
       {{ end }}
     {{ end }}
-    {{ with .Params.image }}
-      {{ $image = . }}
-    {{ end }}
-    {{ with .Site.Params.ogDefaultImage }}
-      {{ if not $image }}
-        {{ $image = . }}
-      {{ end }}
-    {{ end }}
+
     {{ if $image }}
-      {{ $image = $image | absURL }}
       <meta property="og:image" content="{{ $image }}">
       <meta name="twitter:image" content="{{ $image }}">
-      {{ $imageAlt := .Params.imageAlt | default (cond $isHome (printf "%sのサイトイメージ" $siteTitle) (printf "%sのアイキャッチ" .Title)) }}
+      {{ $imageAlt := .Params.imageAlt | default (cond .IsHome (printf "%sのサイトイメージ" .Site.Title) (printf "%sのアイキャッチ" .Title)) }}
       <meta property="og:image:alt" content="{{ $imageAlt }}">
       <meta name="twitter:image:alt" content="{{ $imageAlt }}">
     {{ end }}
