@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>スマホ on xdcyw.net</title>
-    <link>http://localhost:1313/tags/%E3%82%B9%E3%83%9E%E3%83%9B/</link>
+    <link>https://www.xdcyw.net/tags/%E3%82%B9%E3%83%9E%E3%83%9B/</link>
     <description>Recent content in スマホ on xdcyw.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 28 Sep 2025 11:19:27 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E3%82%B9%E3%83%9E%E3%83%9B/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.xdcyw.net/tags/%E3%82%B9%E3%83%9E%E3%83%9B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>リハビリを兼ねて使用しているデバイスについて紹介してみる回</title>
-      <link>http://localhost:1313/posts/my-devices/</link>
+      <link>https://www.xdcyw.net/posts/my-devices/</link>
       <pubDate>Sun, 28 Sep 2025 11:19:27 +0900</pubDate>
-      <guid>http://localhost:1313/posts/my-devices/</guid>
+      <guid>https://www.xdcyw.net/posts/my-devices/</guid>
       <description>はじめに この記事は当サイトxdcyw.netに静的サイトジェネレータを組み込むという改修を 行い、ブログ機能を実装してから一本目の記事でありテスト記事の役割を兼ねています。 hugoで管理しているのですがhugoは記事をマークダウンで記述するのですが マークダウンなんて書くの何億光年ぶりかよ（時間の単位と距離の単位の誤用ネタ） って 感じだしリハビリになればなとも思います。で最初のテーマは何にしようかなと思ったんですが、思いつかなかったし とりあえず自分の使っているITデバイスの紹介でもしようかなと思います。&#xA;パソコン 現在パソコンは家に自分のパソコンは3台あるのですが、&#xA;自作パソコン スペックは&#xA;OS Windows11 Pro CPU Ryzen5 4500 GPU GTX1060 6GB RAM DDR4 16GB SSD 1TB となります。これにWSL上のUbuntuで執筆してます。エディタはVSCodeとVIM使ってます。 .vimrcはみたいかたいればgithubで公開しようかな？&#xA;中古屋で適当に買ったThinkpad 当時Macbook proしか持ってなかったんですがWindows実機が必要なことがあってそのために 買ったやつです。トラックパッドがかろうじて生きているんですがほぼ死にかけで使い勝手悪すぎます。スペックなんて覚えてないです。OSはWindows11です。多分家のどっかに転がっているでしょう。&#xA;親金Macbook pro(M3) 親に買ってもらったMacbook Proです。 画面の一部に縦線が入るという壊れ方をしてしまいApple careはいっていないし修理用 高すぎるしで眠ってもらってます。でもこのまま眠らせておくのはもったいないし外部ディスプレイでもつなげてでも使うべきなんですかね？でも悲しきかなMacbookでしかできない作業解かないんですよね。このサイトのどっかに暗号通貨のアドレスはったので修理費用として送ってもいいんですよ&#xA;スペックはM3 RAM16GB SSD256GBだったかな確か。&#xA;スマホ スマホは&#xA;CMF by nothing phone 1 を使っています。 妻に買ってもらった（というか出世払い的な？）やつです。大切に使わせていただきます。 けっこう高い「けっこう安い」で有名なイオシスさんで中古Aランクで買ったやつです。 デザインがめちゃくちゃかわいくておしゃれで最高なんですよね。 スペックはそんな高くないけどスマホでげむとかしないしスマホですることといったら チャッピーとおしゃべりとか音楽聞くとかXとかいう変な名前のSNSするとかそういう ことなので十分です。&#xA;唯一の難点はFelicaに対応していないことかな～ あとはBluできるしroot化やカスロム焼くことも可能そうなのでそういう層にも おすすめできます。&#xA;イヤホン イヤホンなくしまくりマンでそれゆえにいろんなイヤホンを使ってきましたが それゆえにいえるのですが低価格なワイヤレスイヤホンの正解がでました。&#xA;それはダイソーの1000円（税抜き）スケルトンワイヤレスイヤホンです。 たった1000円でこれぐらいあればもうええやろって音が出て、 安いワイヤレスイヤホン特有のペアリングトラブルがでないんです。 文句ないですよ。ステマじゃないですよ。もっともダイソーさんがステマするとは思えません。&#xA;おわりに いや～、久しぶりにマークダウン書きましたがいいリハビリになりました。 これからもITトピックだったり法律学習のなかでのなんやかんやとかたまに書いていこうと思います。&#xA;では最後まで読んでいただきありがとうございます！！</description>
     </item>
   </channel>

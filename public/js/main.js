@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (navigator.share) {
         try {
-          await navigator.share({ title, url });
+          await navigator.share({ title: title, text: title, url: url });
           target.classList.add('article-share__button--shared');
           target.textContent = 'Shared!';
           setTimeout(() => {
