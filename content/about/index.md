@@ -23,9 +23,8 @@ date: 2024-01-01T00:00:00+09:00
   <h2 class="section-title">&gt; /CONTACT</h2>
   <ul class="contact-list">
     <li><span class="contact-label">Session ID</span><span class="contact-value">05198a577132c72f1ea8c3f0b1cbad6ae5bea53e6dfd3b2b15e76609f1dd226026</span></li>
-    <li><span class="contact-label">Mail</span><a class="contact-link" href="mailto:fuyuki@xdcyw.net">fuyuki@xdcyw.net</a></li>
+    <li><span class="contact-label">GitHub</span><a class="contact-link" href="https://github.com/fuyukihatune-rgb" target="_blank" rel="noopener noreferrer">fuyukihatune-rgb</a></li>
     <li><span class="contact-label">X (Twitter)</span><a class="contact-link" href="https://x.com/xdcyw_" target="_blank" rel="noopener noreferrer">@xdcyw_</a></li>
     <li><span class="contact-label">Note</span><a class="contact-link" href="https://note.com/ncc1030" target="_blank" rel="noopener noreferrer">note.com/ncc1030</a></li>
-    <li><span class="contact-label">XMPP</span><span class="contact-value">fuyuki@conversations.im</span></li>
   </ul>
 </section>
