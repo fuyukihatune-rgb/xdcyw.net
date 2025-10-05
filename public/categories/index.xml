@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on xdcyw.net</title>
-    <link>https://www.xdcyw.net/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on xdcyw.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 30 Sep 2025 01:02:02 +0900</lastBuildDate>
-    <atom:link href="https://www.xdcyw.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Oct 2025 02:31:18 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>メンタルヘルス</title>
+      <link>http://localhost:1313/categories/%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB%E3%83%98%E3%83%AB%E3%82%B9/</link>
+      <pubDate>Mon, 06 Oct 2025 02:31:18 +0900</pubDate>
+      <guid>http://localhost:1313/categories/%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB%E3%83%98%E3%83%AB%E3%82%B9/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AI</title>
-      <link>https://www.xdcyw.net/categories/ai/</link>
+      <link>http://localhost:1313/categories/ai/</link>
       <pubDate>Tue, 30 Sep 2025 01:02:02 +0900</pubDate>
-      <guid>https://www.xdcyw.net/categories/ai/</guid>
+      <guid>http://localhost:1313/categories/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>IT</title>
-      <link>https://www.xdcyw.net/categories/it/</link>
+      <link>http://localhost:1313/categories/it/</link>
       <pubDate>Tue, 30 Sep 2025 01:02:02 +0900</pubDate>
-      <guid>https://www.xdcyw.net/categories/it/</guid>
+      <guid>http://localhost:1313/categories/it/</guid>
       <description></description>
     </item>
     <item>
       <title>思想</title>
-      <link>https://www.xdcyw.net/categories/%E6%80%9D%E6%83%B3/</link>
+      <link>http://localhost:1313/categories/%E6%80%9D%E6%83%B3/</link>
       <pubDate>Tue, 30 Sep 2025 01:02:02 +0900</pubDate>
-      <guid>https://www.xdcyw.net/categories/%E6%80%9D%E6%83%B3/</guid>
+      <guid>http://localhost:1313/categories/%E6%80%9D%E6%83%B3/</guid>
       <description></description>
     </item>
     <item>
       <title>日記</title>
-      <link>https://www.xdcyw.net/categories/%E6%97%A5%E8%A8%98/</link>
+      <link>http://localhost:1313/categories/%E6%97%A5%E8%A8%98/</link>
       <pubDate>Mon, 29 Sep 2025 19:06:12 +0900</pubDate>
-      <guid>https://www.xdcyw.net/categories/%E6%97%A5%E8%A8%98/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>メンタルヘルス</title>
-      <link>https://www.xdcyw.net/categories/%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB%E3%83%98%E3%83%AB%E3%82%B9/</link>
-      <pubDate>Mon, 29 Sep 2025 06:54:44 +0900</pubDate>
-      <guid>https://www.xdcyw.net/categories/%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB%E3%83%98%E3%83%AB%E3%82%B9/</guid>
+      <guid>http://localhost:1313/categories/%E6%97%A5%E8%A8%98/</guid>
       <description></description>
     </item>
     <item>
       <title>ガジェット</title>
-      <link>https://www.xdcyw.net/categories/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88/</link>
+      <link>http://localhost:1313/categories/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88/</link>
       <pubDate>Sun, 28 Sep 2025 11:19:27 +0900</pubDate>
-      <guid>https://www.xdcyw.net/categories/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88/</guid>
+      <guid>http://localhost:1313/categories/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88/</guid>
       <description></description>
     </item>
     <item>
       <title>サイト情報</title>
-      <link>https://www.xdcyw.net/categories/%E3%82%B5%E3%82%A4%E3%83%88%E6%83%85%E5%A0%B1/</link>
+      <link>http://localhost:1313/categories/%E3%82%B5%E3%82%A4%E3%83%88%E6%83%85%E5%A0%B1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.xdcyw.net/categories/%E3%82%B5%E3%82%A4%E3%83%88%E6%83%85%E5%A0%B1/</guid>
+      <guid>http://localhost:1313/categories/%E3%82%B5%E3%82%A4%E3%83%88%E6%83%85%E5%A0%B1/</guid>
       <description></description>
     </item>
   </channel>
