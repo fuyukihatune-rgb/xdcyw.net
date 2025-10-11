@@ -6,8 +6,15 @@
     <description>Recent content on xdcyw.net</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 06 Oct 2025 02:31:18 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 11 Oct 2025 13:06:08 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>パソコン周りの環境のアップデートの話</title>
+      <link>http://localhost:1313/posts/pc-upgrade/</link>
+      <pubDate>Sat, 11 Oct 2025 13:06:08 +0900</pubDate>
+      <guid>http://localhost:1313/posts/pc-upgrade/</guid>
+      <description>今のPCは確か７月か８月に組んだ自作パソコンなのだが 札幌のドスパラさんで大体中古パーツで組んだものだ。&#xA;スペックは&#xA;OS Windows11 Pro CPU Ryzen5 4500 RAM DDR4 16GB SSD 1TB ＋ 120GB GPU GTX1060 6GB という構成である。現状スペックに特に不満はなにのだがメモリが シングルチャンネルで、実は本来16GB×2のデュアルチャンネルにする 予定だったのだが一枚不良品でメモリ指すとブートしないので仕方なく 一枚で使っているのだ。だから近い内にもう一枚メモリ買ってデュアルチャンネル にしたいなとは思っている。&#xA;またGPUは性能持て余しているし現状で十分なのだがCPUはいつかグレードアップしたいなとは考えている。 もっともCPUをアップグレードするならAM5チップセット対応マザーに買い替えてCPUも最新のものにしたいなとは考えている。&#xA;一番の不満はPCそれ自体の不満ではなく、モニターアームである。&#xA;Amazonで3500円ぐらいのデュアルモニターアームを何も調べずに適当にポチったのだが 自由に高さや位置の調整ができずに使い勝手が悪すぎてモニターアームはいいものに買い直したい。&#xA;愛機ちゃん(配線が汚いのはご愛嬌) pic.twitter.com/4MyZdim4O7&#xA;&amp;mdash; xdcyw (@xdcyw_) October 11, 2025 </description>
+    </item>
     <item>
       <title>私の解離について</title>
       <link>http://localhost:1313/posts/koudstu-kairi/</link>

@@ -2,6 +2,9 @@ baseURL = 'https://www.xdcyw.net/'
 languageCode = 'ja'
 title = 'xdcyw.net'
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [params]
   description = "札幌在住の多重人格（解離性同一性障害）当事者が司法試験を目指す過程と日常を綴るブログ。法律学習やメンタルヘルス、ITについて発信します。"
   ogDefaultImage = "/ChatGPT Image 2025年9月29日 07_10_21.png"
